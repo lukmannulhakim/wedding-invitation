@@ -12,20 +12,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
   <link href="http://i.imgur.com/DEOVT9b.png" rel="shortcut icon">
-  <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-	<script>
-		twttr.widgets.createShareButton(
-			'https://dev.twitter.com/',
-			document.getElementById('twitter'),
-			{
-				text: 'Hello World'
-			}
-			.then( function( el ) {
-				console.log('Tweet button added.');
-			});
-		);
-	</script>
+  
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -493,6 +480,20 @@
 	<script type="text/javascript">
 		document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
 		$('body').on('contextmenu', 'img', function(e){ return false; });
+	</script>
+
+	<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+		twttr.widgets.createShareButton(
+			'https://dev.twitter.com/',
+			document.getElementById('twitter'),
+			{
+				text: 'Hello World'
+			}
+			.then( function( el ) {
+				console.log('Tweet button added.');
+			});
+		);
 	</script>
 </body>
 </html>
